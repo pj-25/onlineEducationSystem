@@ -1,0 +1,42 @@
+body
+{
+    background-color: #434343;
+}
+main{
+    background-color: gray;
+    width: 70vw;
+    height:fit-content;
+    margin: 7% 15%;
+    border: 2px solid ;
+    box-shadow: 10px 5px 10px red;
+}
+#first
+{
+    width: 50%;
+    height:70%;
+    margin: 3% 25% 1% 25%;
+    align-content: center;
+}
+#question
+{
+    text-align: center;
+}
+#options
+{
+    padding: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+button
+{
+    margin: 5px;
+}
+button:hover
+{
+    box-shadow: 5px -2px 10px blue;
+
+}
+img:hover
+{
+    box-shadow: 5px -2px 10px blue;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/firstCss.css">
+    <style>
+        :root
+        {
+            font-family: 'Syne Mono', monospace;
+        }
+        #first
+        {
+            text-align: center;
+            margin-top: 2%;
+        }
+        a:hover
+        {
+            cursor: pointer;
+        }
+        #image
+        {
+            width: 50%;
+            height:70%;
+            margin: 3% 25% 1% 25%;
+            align-content: center;
+        }
+        #image img
+        {
+            scale: 0.75;
+        }
+
+
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <main>
+        <div id="image">
+            <img src="https://media.giphy.com/media/xT9IgIc0lryrxvqVGM/giphy.gif" alt="image for Question">
+        </div>
+        <div id="first">
+            <h1>☹️</h1>
+            <h2>Sorry for inconvenience :(</h2>
+            <h3>Select other option to <a href="#" id="link"><span style="color:red;">continue!</span></a></h3>
+        </div>
+    </main>
+    <script>
+        var urlBtn = document.getElementById("link");
+        urlBtn.onclick = function()
+        {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

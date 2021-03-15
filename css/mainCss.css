@@ -1,0 +1,38 @@
+main{
+    background-color: whitesmoke;
+    width: 90vw;
+    height:80vh;
+    margin: 4% 3% 3% 5%;
+    border: 2px solid ;
+    box-shadow: 25px 10px 10px #53595E;
+}
+#mainCanvas{
+    background-color: whitesmoke;
+    width: 800px;
+    height:500px;
+    margin: 4% 3% 3% 5%;
+    border: 2px solid ;
+    box-shadow: 25px 10px 10px #53595E;
+}
+#first
+{
+    width: 50%;
+    height:70%;
+    margin: 3% 25% 1% 25%;
+    align-content: center;
+}
+
+#options
+{
+    padding-bottom: 20px;
+    text-align: center;
+}
+button
+{
+    margin: 5px;
+}
+img
+{
+    width: 100%;
+    height: 100%;
+}
