@@ -83,6 +83,8 @@ main{
   text-transform: uppercase;
   letter-spacing: 0.3ch;
   width: 100%;
+
+  position: static;
 }
 
 .logo > a{
@@ -133,7 +135,7 @@ main{
     width: 5rem;
     height: 100vh;
     position: fixed;
-    background-color: var(--wp--preset--color--background);
+    background-color: #434343;
     transform: 200ms ease;
     z-index: 1;
   }
