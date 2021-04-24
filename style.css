@@ -1,0 +1,157 @@
+main{
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+.site-header{
+  margin-left: 2em;
+  /* margin-right: auto; */
+}
+
+.navbar {
+  position: fixed;
+  background-color: var(--wp--preset--color--foreground);
+  transition: width 600ms ease;
+  /* box-shadow: 0px 15px 10px grey; */
+  overflow: scroll;
+}
+
+.navbar-nav{
+  /* list-style: none; */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item{
+  width: 100%;
+}
+
+.nav-item:last-child{
+  margin-top: auto;
+}
+
+.nav-link{
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: whitesmoke;
+  color: var(--wp--preset--color--primary);
+}
+
+.link-text{
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg{
+  width: 2rem;
+  min-width:  2rem;
+  margin: 0 1.5rem;
+}
+
+.fa-primary{
+  color:violet;
+}
+.fa-secondary{
+  color: #6649b8;
+}
+
+.fa-primary, .fa-secondary{
+  transition: var(--transition-speed);
+}
+
+.logo{
+  font-weight: bold;
+  text-transform: uppercase;
+  /* margin-bottom: 1rem; */
+  text-align: center;
+  /* color: var(--wp--preset--color--foreground); */
+  background: var(--wp--preset--color--background);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo > a{
+  transition: transform var(--transition-speed);
+  filter: none;
+}
+
+.active-link {
+  filter: none;
+  background: var(--wp--preset--color--primary);
+}
+
+.link-icon{
+  height: 54px;
+  width: 54px;
+}
+
+@media only screen and (max-width: 600px){
+  .navbar{
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    z-index: 1;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .navbar-nav{
+    flex-direction: row;
+    height: auto;
+    z-index: 1;
+  }
+
+  .nav-link{
+    justify-content: center;
+  }
+
+  main{
+    margin: 0;
+  }
+
+}
+
+@media only screen and (min-width: 600px){
+  .navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--wp--preset--color--background);
+    transform: 200ms ease;
+    z-index: 1;
+  }
+
+  .navbar:hover{
+    width: 12rem;
+    /* z-index: 1; */
+  }
+
+  .navbar:hover .link-text{
+    display: inline;
+  }
+
+  .navbar:hover .logo svg{
+    margin-left: 11rem;
+  }
+
+  .navbar:hover .logo-text{
+    left: 0px;
+  }
+}   
