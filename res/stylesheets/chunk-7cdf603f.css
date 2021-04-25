@@ -1,0 +1,29 @@
+.b-toaster.b-toaster-bottom-right .b-toaster-slot {
+ max-width:480px
+}
+.b-toaster.b-toaster-bottom-right .b-toaster-slot .b-toast {
+ max-width:480px
+}
+.b-toaster.b-toaster-bottom-right .b-toaster-slot .b-toast.b-toast-gradient-dark .toast {
+ color:var(--white100);
+ background:linear-gradient(180deg, #2e353e 0%, #3a2e4a 100%);
+ border-color:var(--black87)
+}
+.b-toaster.b-toaster-bottom-right .b-toaster-slot .b-toast .bottom-toast {
+ max-width:480px
+}
+.b-toaster.b-toaster-bottom-right .b-toaster-slot .b-toast .bottom-toast .btn-link {
+ padding:0;
+ color:var(--white100);
+ text-decoration:underline
+}
+.b-toaster.b-toaster-bottom-right .b-toaster-slot .b-toast .bottom-toast .close {
+ position:absolute;
+ top:0.75rem;
+ right:0.75rem;
+ color:var(--white);
+ cursor:pointer
+}
+
+
+/*# sourceMappingURL=chunk-7cdf603f.css.map?d008e4de*/
