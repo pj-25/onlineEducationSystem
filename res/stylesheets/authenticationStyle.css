@@ -1,0 +1,46 @@
+/* 
+    Created on : Apr 27, 2021, 8:24:39 PM
+    Author     : joshi prashant
+*/
+.page-title{
+    float: left;
+}
+
+.main-pane{
+    background-color: #f85a5b;
+    margin:5%;
+    padding: 5%;
+    min-height: 100vh;
+    text-align: center;
+    box-shadow: 5px -10px 20px 2px gray;
+}
+
+.login-title{
+    color:white;
+    background-color: #434343;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0.5em; 
+}
+
+form *{
+    display: block;
+    width: 30%;
+    text-align: center;
+    margin: 1em auto 1em auto;
+    border-radius: 2em;
+    padding: 1em; 
+    font-family: monospace;   
+}
+
+[type="submit"]{
+    width: initial;
+    background-color: #ff9800;
+}
+
+.main-img{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30%;
+    padding: 2%;
+}

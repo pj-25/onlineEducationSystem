@@ -1,3 +1,19 @@
+<%-- 
+    Document   : learner.jsp
+    Created on : Apr 27, 2021, 7:20:44 PM
+    Author     : joshi prashant
+--%>
+<%
+    if(session.isNew())
+    {
+    %>
+    <jsp:forward page="unauthorizedUser.jsp" />
+    <%
+    }
+String userID = (String) session.getAttribute("userID");
+%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
 
@@ -231,6 +247,9 @@
       --font-base-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     }
   </style>
+  <link rel='stylesheet' id='all-css-8-1'
+    href='https://s0.wp.com/_static/??-eJxti0EKgCAQAD+ULUaJl+gtJqbG6opr9P3o0CHqNAzMwFmEpdxcbpAOUfDwMTMU4iY2NLECB1Nj9g97y9zB/8Vko0GB5Oktn6kFlxxDGMEjrQbvYEmzVHIclNZy2i9lFDfR?cssminify=yes'
+    type='text/css' media='all' />
   
   <!-- Jetpack Open Graph Tags -->
   <meta property="og:type" content="website" />
@@ -301,7 +320,7 @@
 </head>
 
 <body
-  class="home page-template-default page page-id-5 logged-in admin-bar no-customize-support wp-custom-logo wp-embed-responsive customizer-styles-applied singular image-filters-enabled hide-homepage-title highlander-enabled highlander-light">
+  class="page-template-default page page-id-5 logged-in admin-bar no-customize-support wp-custom-logo wp-embed-responsive customizer-styles-applied singular image-filters-enabled hide-homepage-title highlander-enabled highlander-light">
 
 
   <script type="text/javascript">
@@ -390,28 +409,33 @@
   <nav class="navbar" role="main">
     <ul class="navbar-nav">
       <li class="logo">
-        <a href="index.html" class="nav-link">
+        <a href="learner.jsp" class="nav-link">
             <img src="res/images/OESlogo.jpg" class="logo"
             alt="Online Education System" /></a>
 
       </li>
-      
       <li class="nav-item">
-        <a href="login.html" class="nav-link active-link">
+        <a href="learner.jsp" class="nav-link active-link">
           <img src="res/images/home.png" alt="" width="35" height="35" style="margin-left: 1rem;">
           <span class="link-text">Home</span>
         </a>
       </li>
       <li class="nav-item">
-        <a href="login.html" class="nav-link">
-          <img src="res/images/login.png" alt="" width="35" height="35" style="margin-left: 1rem;">
-          <span class="link-text">Login</span>
+        <a href="#" class="nav-link">
+            <img src="res/images/user.png" alt="" width="35" height="35" style="margin-left: 1rem;">
+          <span class="link-text">Profile:<%=userID%></span>
         </a>
       </li>
       <li class="nav-item">
-        <a href="register.html" class="nav-link">
-            <img src="res/images/register.png" alt="" width="35" height="35" style="margin-left: 1rem;">
-          <span class="link-text">Register</span>
+        <a href="course/course.html" class="nav-link">
+          <img src="res/images/online-course.png" alt="" width="35" height="35" style="margin-left: 1rem;">
+          <span class="link-text">Courses</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="dashboard/dashboard.html" class="nav-link">
+          <img src="res/images/speedometer.png" alt="" width="35" height="35" style="margin-left: 1rem;">
+          <span class="link-text">Dashboard</span>
         </a>
       </li>
       <li class="nav-item">
@@ -427,7 +451,12 @@
           <span class="link-text">About</span>
         </a>
       </li>
-      
+      <li class="nav-item">
+        <a href="logout.jsp" class="nav-link">
+          <img src="res/images/arrow.png" alt="" width="35" height="35" style="margin-left: 1rem;">
+          <span class="link-text">Logout</span>
+        </a>
+      </li>
     </ul>
   </nav>
   <header id="masthead" class="site-header responsive-max-width has-logo has-title-and-tagline has-menu" role="banner">

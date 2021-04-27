@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>OES-Online Education System : REGISTER</title>
+                <link rel="stylesheet" type="text/css" href="res/stylesheets/authenticationStyle.css">
+                <link rel="icon" type="image/jpg" href="res/images/OESlogo.jpg">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+	</head>
+	
+	<body>
+
+		<div class="main-pane">
+                    <h1 class="login-title"><i class="bi bi-person-plus-fill"></i> REGISTER</h1>
+                    <img class="main-img" src="res/images/OESlogo.jpg" alt="OES logo">
+                    <form action="registerStatus.jsp" method="post" onsubmit="return confirmPassword()">
+                        <input type="text" name="userID" required placeholder="Create User ID">
+                        <input type="text" name="first_name" placeholder="First Name" required pattern="\D+">
+                        <input type="text" name="last_name" placeholder="Last Name" required pattern="\D+">
+                        <input type="date" name="birthdate" required>
+                        <input type="text" name="qualification" placeholder="Qualification" required>
+                        <input type="email" name="email_id" placeholder="Email ID" required>
+                        <select name="user_type">
+                            <option value="no-selection">Select user type</option>
+                            <option value="learner">Learner</option>
+                            <option value="teacher">Teacher</option>
+                        </select>
+                        <input type="password" name="password" placeholder="Create Password" required>
+                        <input type="password" name="cpassword" placeholder="Confirm Password" required>
+                        <input type="submit" value="Submit">
+                    </form>
+			
+		</div>
+                
+
+	</body>
+        <script>
+            function confirmPassword(){
+                var password = document.querySelector("[name='password']");
+                var confirmPassword = document.querySelector("[name='cpassword']");
+                if(confirmPassword.value !== password.value){
+                    alert("Password not confirmed!");
+                    return false;
+                }
+                return true;
+            }
+         </script>
+	
+</html>
