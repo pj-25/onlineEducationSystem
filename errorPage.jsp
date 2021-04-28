@@ -4,7 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>BAYF.com :(</title>
-        <link rel="stylesheet" href="res/stylesheets/style.css">
+        <link rel="stylesheet" href="res/stylesheets/authenticationStyle.css">
     </head>
     <body>
         <div class="main-pane" style="background-color:#434343; text-align: center; color:red;">

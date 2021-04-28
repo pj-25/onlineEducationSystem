@@ -24,7 +24,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>OES-Online Education System :: Registered :)</title>
-        <link rel="stylesheet" href="res/stylesheets/style.css">
+        <link rel="stylesheet" href="res/stylesheets/authenticationStyle.css">
     </head>
     <body>
         <div class="main-pane">
